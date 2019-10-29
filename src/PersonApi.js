@@ -4,7 +4,7 @@ const fetchPerson = () => {
     .then(x => x.results[0]);
 };
 
-const wrapPromise = promise => {
+export const wrapPromise = promise => {
   let status = "pending";
   let result = "";
   let suspender = promise.then(
